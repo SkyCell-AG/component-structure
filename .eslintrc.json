@@ -1,0 +1,96 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "extends": "eslint:recommended",
+    "rules": {
+        "@typescript-eslint/class-name-casing": [
+            "error"
+        ],
+        "@typescript-eslint/semi": [
+            "error",
+            "never"
+        ],
+        "class-methods-use-this": "error",
+        "no-var": "error",
+        "array-callback-return": "error",
+        "func-call-spacing": "error",
+        "no-template-curly-in-string": "error",
+        "no-extra-parens": "error",
+        "no-dupe-else-if": "error",
+        "no-dupe-args": "error",
+        "no-console": "error",
+        "no-else-return": "error",
+        "array-element-newline": [
+            "error",
+            "always"
+        ],
+        "object-property-newline": "error",
+        "indent": [
+            "error",
+            4
+        ],
+        "no-useless-catch": "error",
+        "no-constant-condition": [
+            "error",
+            {
+                "checkLoops": false
+            }
+        ],
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "always-multiline",
+                "objects": "always-multiline",
+                "imports": "always-multiline",
+                "exports": "always-multiline",
+                "functions": "always-multiline"
+            }
+        ],
+        "array-bracket-newline": [
+            "error",
+            {
+                "minItems": 2
+            }
+        ],
+        "object-curly-newline": [
+            "error",
+            "always"
+        ],
+        "dot-location": [
+            "error",
+            "property"
+        ],
+        "template-curly-spacing": [
+            "error",
+            "never"
+        ],
+        "no-multi-spaces": "error",
+        "default-param-last": [
+            "error"
+        ],
+        "consistent-return": "error",
+        "object-curly-spacing": [
+            "error",
+            "always"
+        ],
+        "curly": "error",
+        "eqeqeq": "error",
+        "no-throw-literal": "error",
+        "semi": [
+            "error",
+            "never"
+        ]
+    },
+    "env": {
+        "es6": true,
+        "mocha": true,
+        "node": true
+    }
+}
