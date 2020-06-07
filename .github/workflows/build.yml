@@ -14,11 +14,10 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         node-version: '12'
-    - run: xhost +
-    - run: export DISPLAY=0:0
+    - run: sudo apt-get install xvfb
     - run: npm install
     - run: npm run lint
-    - run: npm run test
+    - run: xvfb-run --auto-servernum npm run test
     - run: npm run compile
     - run: npm install -g vsce
     - run: vsce publish -p ${{ secrets.VSCE_TOKEN }}
