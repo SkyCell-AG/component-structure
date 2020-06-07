@@ -2,6 +2,7 @@
 	"name": "component-structure",
 	"displayName": "Create component",
 	"description": "It helps you create components faster.",
+	"publisher": "SkyCell",
 	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.45.0"
